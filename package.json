@@ -4,8 +4,7 @@
   "description": "",
   "main": "index.ts",
   "scripts": {
-    "start": "nodemon",
-    "build": "npm run build"
+    "start": "nodemon"
   },
   "keywords": [],
   "author": "",
