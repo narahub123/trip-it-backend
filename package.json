@@ -2,10 +2,10 @@
   "name": "nodejs-api",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "index.ts",
   "scripts": {
     "start": "nodemon",
-    "build": "node index.js"
+    "build": "npm install"
   },
   "keywords": [],
   "author": "",
