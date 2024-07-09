@@ -36,10 +36,14 @@ export const login = async (req: express.Request, res: express.Response) => {
 
     res.cookie("access_token", accessToken, {
       httpOnly: true,
+      sameSite: "none",
+      secure: true,
       expires: new Date(Date.now() + 3600000),
     });
     res.cookie("refresh_token", refreshToken, {
       httpOnly: true,
+      sameSite: "none",
+      secure: true,
       expires: new Date(Date.now() + 3600000),
     });
     res.status(200).json({ code: 1, msg: "logged in successfully" });
