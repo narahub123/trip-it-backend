@@ -47,6 +47,8 @@ export const verifyAccessToken = (
 
           res.cookie("access_token", newAccessToken, {
             httpOnly: true,
+            sameSite: "none",
+            secure: true,
             expires: new Date(Date.now() + 3600000),
           });
 
